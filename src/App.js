@@ -1,24 +1,24 @@
-import logo from './logo.svg';
+import { useSelector } from 'react-redux';
+import AlertError from './AlertError';
+import  AlertSuccess  from './AlertSuccess';
 import './App.css';
+import Footer from './Footer';
+import Form from './Form';
+import Loader from './Loader';
 
 function App() {
+  const {error, loading, success} = useSelector((state) => state.feedbacks);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className='container'>
+        <h1>Reach out to us!</h1>
+        <Form/>
+      </div>
+      <Footer/>
+      { error && <AlertError error={error}/>}
+      { success && <AlertSuccess/> }
+      { loading && <Loader/>}
+    </>
   );
 }
 
