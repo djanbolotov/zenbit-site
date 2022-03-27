@@ -12,7 +12,7 @@ export const ERROR_NULL = 'ERROR_NULL';
 export const newFeedback = (data) => {
     return async (dispatch) => {
         dispatch({type: POST})
-        const response = await fetch("https://zenbit-test.herokuapp.com/api/feedbacks/create", 
+        const response = await fetch("https://zenbit-api-production.up.railway.app/api/feedbacks/create", 
           {
             method: "post",
             headers: {"Content-Type": "application/json"},
