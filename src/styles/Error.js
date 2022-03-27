@@ -18,6 +18,10 @@ width: 80%;
 background: rgba(255, 76, 48, 0.8);
 border-radius: 5rem;
 padding: 1rem;
+@media (max-width: 600px) {
+    font-size: 1rem;
+    left: 5%;
+}
 `;
 
 export const CancelButton = styledComponents.div`

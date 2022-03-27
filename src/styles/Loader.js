@@ -9,6 +9,9 @@ const BounceAnimation = keyframes`
 export const Loading = styled.p`
   color: rgba(250, 211, 79, 1);
   font-size: 3rem;
+  @media (max-width: 600px) {
+    font-size: 2rem;
+}
 `;
 
 export const DotWrapper = styled.div`
@@ -17,6 +20,9 @@ export const DotWrapper = styled.div`
   top: 30%;
   display: flex;
   align-items: center;
+  @media (max-width: 600px) {
+    left: 20%;
+}
 `;
 export const Dot = styled.div`
   background-color: rgba(250, 211, 79, 1);

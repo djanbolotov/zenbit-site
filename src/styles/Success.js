@@ -14,6 +14,11 @@ border-radius: 5rem;
 display: flex;
 justify-content: center;
 align-items: center;
+
+@media (max-width: 600px) {
+    font-size: 0.8rem;
+    left: 5%;
+}
 `;
 
 export const CancelButton = styledComponents.div`

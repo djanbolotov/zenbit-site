@@ -12,7 +12,7 @@ function App() {
     <>
       <div className='container'>
         <h1>Reach out to us!</h1>
-        <Form/>
+        <Form loading={loading}/>
       </div>
       <Footer/>
       { error && <AlertError error={error}/>}

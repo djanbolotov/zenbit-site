@@ -25,7 +25,7 @@ h1{
 
 .footer-icons{
   display: flex;
-  position: fixed;
+  position: relative;
   bottom: 0;
   height: 8.7rem;
   border-top: 2px solid #D8D8D8;
@@ -36,4 +36,10 @@ h1{
 
 .footer-icons *{
   margin: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .container{
+    padding: 2rem 1rem;
+  }
 }

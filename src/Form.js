@@ -2,7 +2,7 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { emailChangedActionCreator, messageChangedActionCreator, nameChangedActionCreator, newFeedback } from './store/action'
 import {Input, TextArea, Button} from './styles/Form'
-function Form() {
+function Form({loading}) {
 
   const dispatch = useDispatch()
 
@@ -25,7 +25,7 @@ function Form() {
             <TextArea value={feedback.message} onChange={(e) => dispatch(messageChangedActionCreator(e.target.value))} placeholder='Message*'/>
         </div>
         <div>
-            <Button onClick={() => post()}>Send message</Button>
+            <Button disabled={loading} onClick={() => post()}>Send message</Button>
         </div>
     </div>
   )

@@ -15,8 +15,8 @@ function AlertError({error}) {
         </ErrorFlex>
         <ul>
             {
-                error.map((message) =>{
-                    return <li> {message} </li>
+                error.map((message, id) =>{
+                    return <li key={id}> {message} </li>
                 })
             }
         </ul>
