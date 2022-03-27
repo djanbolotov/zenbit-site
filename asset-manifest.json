@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/zenbit-site/static/css/main.d5ff9ceb.css",
+    "main.js": "/zenbit-site/static/js/main.df1fc479.js",
+    "static/media/Background.png": "/zenbit-site/static/media/Background.0e40120ed2a65167e91e.png",
+    "index.html": "/zenbit-site/index.html",
+    "main.d5ff9ceb.css.map": "/zenbit-site/static/css/main.d5ff9ceb.css.map",
+    "main.df1fc479.js.map": "/zenbit-site/static/js/main.df1fc479.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d5ff9ceb.css",
+    "static/js/main.df1fc479.js"
+  ]
+}
